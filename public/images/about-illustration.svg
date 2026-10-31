@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="aboutBg" x1="0" y1="0" x2="500" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A192F" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0A192F" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <rect width="500" height="360" rx="20" fill="url(#aboutBg)" />
+
+  <g filter="url(#shadow2)">
+    <rect x="40" y="110" width="110" height="140" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="95" cy="150" r="22" fill="#E0F2FE" />
+    <text x="86" y="157" fill="#0284C7" font-family="system-ui, sans-serif" font-size="20">🌐</text>
+    <text x="95" y="195" text-anchor="middle" fill="#0A192F" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Browser</text>
+    <text x="95" y="215" text-anchor="middle" fill="#64748B" font-family="monospace" font-size="10">HTTP Client</text>
+  </g>
+
+  <path d="M 155 160 L 190 160" stroke="#00D2FF" stroke-width="2.5" />
+  <text x="173" y="150" text-anchor="middle" fill="#0284C7" font-family="monospace" font-size="10" font-weight="700">req</text>
+
+  <g filter="url(#shadow2)">
+    <rect x="195" y="70" width="130" height="220" rx="16" fill="url(#cardGrad2)" stroke="#00D2FF" stroke-width="1.5" />
+    <circle cx="260" cy="115" r="24" fill="#00D2FF" fill-opacity="0.2" />
+    <text x="250" y="123" fill="#00D2FF" font-family="system-ui, sans-serif" font-size="22">⚡</text>
+    <text x="260" y="160" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Node Server</text>
+    <text x="260" y="180" text-anchor="middle" fill="#38BDF8" font-family="monospace" font-size="11">server.js</text>
+    
+    <rect x="210" y="200" width="100" height="24" rx="6" fill="#1E293B" />
+    <text x="260" y="216" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="9">URL Router</text>
+
+    <rect x="210" y="235" width="100" height="24" rx="6" fill="#1E293B" />
+    <text x="260" y="251" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="9">Status Codes</text>
+  </g>
+
+  <path d="M 330 160 L 365 160" stroke="#00D2FF" stroke-width="2.5" />
+  <text x="348" y="150" text-anchor="middle" fill="#0284C7" font-family="monospace" font-size="10" font-weight="700">fs</text>
+
+  <g filter="url(#shadow2)">
+    <rect x="370" y="110" width="100" height="140" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="420" cy="150" r="22" fill="#FEF3C7" />
+    <text x="411" y="158" fill="#D97706" font-family="system-ui, sans-serif" font-size="20">📁</text>
+    <text x="420" y="195" text-anchor="middle" fill="#0A192F" font-family="system-ui, sans-serif" font-size="13" font-weight="700">public/</text>
+    <text x="420" y="215" text-anchor="middle" fill="#64748B" font-family="monospace" font-size="10">HTML / CSS</text>
+  </g>
+
+  <path d="M 195 200 L 155 200" stroke="#10B981" stroke-width="2.5" stroke-dasharray="4 3" />
+  <text x="175" y="218" text-anchor="middle" fill="#059669" font-family="monospace" font-size="10" font-weight="700">res</text>
+</svg>

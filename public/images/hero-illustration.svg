@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="540" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0F9FF" />
+      <stop offset="100%" stop-color="#E0F2FE" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="320" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A192F" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A192F" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="540" height="380" rx="24" fill="url(#bgGrad)" />
+
+  <circle cx="80" cy="70" r="45" fill="#38BDF8" fill-opacity="0.15" />
+  <circle cx="480" cy="300" r="60" fill="#00D2FF" fill-opacity="0.12" />
+  <circle cx="460" cy="80" r="15" fill="#0284C7" fill-opacity="0.25" />
+
+  <g filter="url(#shadow)">
+    <rect x="110" y="55" width="320" height="230" rx="18" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5" />
+    
+    <rect x="110" y="55" width="320" height="36" rx="18" fill="#0F172A" />
+    <rect x="110" y="73" width="320" height="18" fill="#0F172A" />
+    <circle cx="132" cy="73" r="5" fill="#EF4444" />
+    <circle cx="148" cy="73" r="5" fill="#F59E0B" />
+    <circle cx="164" cy="73" r="5" fill="#10B981" />
+    <text x="210" y="77" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">node server.js : 3000</text>
+
+    <rect x="135" y="105" width="270" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="155" cy="126" r="6" fill="#10B981" />
+    <text x="175" y="124" fill="#F8FAFC" font-family="monospace" font-size="12" font-weight="700">GET /home</text>
+    <rect x="335" y="116" width="55" height="20" rx="10" fill="#065F46" />
+    <text x="347" y="130" fill="#34D399" font-family="monospace" font-size="10" font-weight="700">200 OK</text>
+
+    <rect x="135" y="157" width="270" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="155" cy="178" r="6" fill="#00D2FF" />
+    <text x="175" y="176" fill="#F8FAFC" font-family="monospace" font-size="12" font-weight="700">GET /about</text>
+    <rect x="335" y="168" width="55" height="20" rx="10" fill="#065F46" />
+    <text x="347" y="182" fill="#34D399" font-family="monospace" font-size="10" font-weight="700">200 OK</text>
+
+    <rect x="135" y="209" width="270" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="155" cy="230" r="6" fill="#38BDF8" />
+    <text x="175" y="228" fill="#F8FAFC" font-family="monospace" font-size="12" font-weight="700">GET /contact</text>
+    <rect x="335" y="220" width="55" height="20" rx="10" fill="#065F46" />
+    <text x="347" y="234" fill="#34D399" font-family="monospace" font-size="10" font-weight="700">200 OK</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="180" width="130" height="60" rx="12" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5" />
+    <circle cx="68" cy="210" r="16" fill="url(#cyanGrad)" />
+    <text x="63" y="215" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="800">⚡</text>
+    <text x="94" y="205" fill="#0A192F" font-family="system-ui, sans-serif" font-size="11" font-weight="700">HTTP Module</text>
+    <text x="94" y="222" fill="#0284C7" font-family="monospace" font-size="9" font-weight="600">Pure Node.js</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="250" width="145" height="64" rx="12" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5" />
+    <circle cx="395" cy="282" r="16" fill="#0A192F" />
+    <text x="388" y="287" fill="#00D2FF" font-family="system-ui, sans-serif" font-size="15" font-weight="800">⇄</text>
+    <text x="420" y="277" fill="#0A192F" font-family="system-ui, sans-serif" font-size="11" font-weight="700">fs/promises</text>
+    <text x="420" y="294" fill="#10B981" font-family="monospace" font-size="9" font-weight="600">Async / Await</text>
+  </g>
+
+  <path d="M 170 210 L 110 210" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4 4" />
+  <path d="M 365 282 L 310 282" stroke="#0284C7" stroke-width="2" stroke-dasharray="4 4" />
+</svg>

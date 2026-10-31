@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | GOOGOOEXAMPLEGAAGAA</title>
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/home" class="brand" aria-label="GOOGOOEXAMPLEGAAGAA Homepage">
+        <img src="/images/logo.svg" alt="GOOGOOEXAMPLEGAAGAA Logo" class="brand-logo">
+        <span class="brand-text">GOOGOOEXAMPLEGAAGAA</span>
+        <span class="brand-badge">Assignment 6</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="/home" class="nav-link">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      
+      <div class="error-hero">
+        <div class="error-badge">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-desc">
+          The route you requested does not exist on this server. The Node.js router checked its available route map and returned an HTTP <strong>404 Not Found</strong> status code.
+        </p>
+        
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/home" class="btn btn-primary">
+            &larr; Return to Home Page
+          </a>
+          <a href="/about" class="btn btn-outline">
+            View Route Map
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-title">GOOGOOEXAMPLEGAAGAA</div>
+          <p>Tutedude Assignment 6: A Simple Multi-Page Web Server Using Pure Node.js Built-In Modules.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Server Routes</h4>
+          <ul class="footer-links">
+            <li><a href="/home">GET /home (200)</a></li>
+            <li><a href="/about">GET /about (200)</a></li>
+            <li><a href="/contact">GET /contact (200)</a></li>
+            <li><a href="/random">GET /random (404)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GOOGOOEXAMPLEGAAGAA. Built for Tutedude Assignment 6.</p>
+        <p>Powered by Node.js <code class="code-badge">http</code> module</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

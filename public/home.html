@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOOGOOEXAMPLEGAAGAA — Home</title>
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/home" class="brand" aria-label="GOOGOOEXAMPLEGAAGAA Homepage">
+        <img src="/images/logo.svg" alt="GOOGOOEXAMPLEGAAGAA Logo" class="brand-logo">
+        <span class="brand-text">GOOGOOEXAMPLEGAAGAA</span>
+        <span class="brand-badge">Assignment 6</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="/home" class="nav-link active">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            Node.js HTTP Server Demo
+          </div>
+          <h1 class="hero-title">
+            Welcome to <br>
+            <span class="gradient-text">GOOGOOEXAMPLEGAAGAA</span>
+          </h1>
+          <p class="hero-description">
+            A simple multi-page web server handcrafted from scratch with Node.js built-in <code class="code-badge">http</code> and <code class="code-badge">fs/promises</code> modules — no Express, no frameworks, just vanilla JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a href="/about" class="btn btn-primary">
+              Learn About Project &rarr;
+            </a>
+            <a href="/contact" class="btn btn-outline">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-graphic">
+          <img src="/images/hero-illustration.svg" alt="GOOGOOEXAMPLEGAAGAA Architecture Illustration">
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <div class="section-tag">Core Concepts</div>
+          <h2 class="section-title">What Powers This Server?</h2>
+          <p class="section-desc">Key architectural concepts implemented in Tutedude Assignment 6.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🌐</div>
+            <h3>Native HTTP Module</h3>
+            <p>Built using Node.js's built-in <code class="code-badge">http.createServer()</code> without relying on third-party frameworks like Express or Fastify.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🧭</div>
+            <h3>URL Routing & Redirects</h3>
+            <p>Handles <code class="code-badge">/home</code>, <code class="code-badge">/about</code>, <code class="code-badge">/contact</code>, cleanly redirects <code class="code-badge">/</code> to <code class="code-badge">/home</code> with HTTP 302, and safely catches invalid URLs.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">⚡</div>
+            <h3>Asynchronous File I/O</h3>
+            <p>Non-blocking file reads using <code class="code-badge">fs/promises</code> with <code class="code-badge">async/await</code> for HTML pages, CSS styles, client scripts, and SVG graphics.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-title">GOOGOOEXAMPLEGAAGAA</div>
+          <p>Tutedude Assignment 6: A Simple Multi-Page Web Server Using Pure Node.js Built-In Modules.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Server Routes</h4>
+          <ul class="footer-links">
+            <li><a href="/home">GET /home (200)</a></li>
+            <li><a href="/about">GET /about (200)</a></li>
+            <li><a href="/contact">GET /contact (200)</a></li>
+            <li><a href="/random">GET /random (404)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GOOGOOEXAMPLEGAAGAA. Built for Tutedude Assignment 6.</p>
+        <p>Powered by Node.js <code class="code-badge">http</code> module</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

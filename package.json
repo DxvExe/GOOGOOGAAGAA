@@ -1,0 +1,19 @@
+{
+  "name": "googooexamplegaagaa",
+  "version": "1.0.0",
+  "description": "A Simple Multi-Page Web Server Using Node.js - Tutedude Assignment 6",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-routes.js"
+  },
+  "keywords": [
+    "nodejs",
+    "http",
+    "vanilla-node",
+    "web-server",
+    "tutedude"
+  ],
+  "author": "Student Developer",
+  "license": "ISC"
+}
